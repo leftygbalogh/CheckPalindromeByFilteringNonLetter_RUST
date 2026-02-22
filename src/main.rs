@@ -1,7 +1,5 @@
 use std::io::{self, BufRead};
-
-
-
+use log::log;
 /*
  * Complete the 'isAlphabeticPalindrome' function below.
  *
@@ -16,6 +14,7 @@ fn isAlphabeticPalindrome(code: &str) -> bool {
 	let reverse = code.chars().rev().collect::<String>();
 	//print!("{}", &reverse);
 	//println!("{}", &code == &reverse);
+
 	&code == &reverse
 
 }
