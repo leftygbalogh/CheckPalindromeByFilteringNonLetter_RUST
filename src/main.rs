@@ -12,11 +12,11 @@ use std::io::{self, BufRead};
 fn isAlphabeticPalindrome(code: &str) -> bool {
 
 	let code = code.chars().filter(|&c| c.is_alphabetic()).collect::<String>();
-	print!("{}", &code);
+	//print!("{}", &code);
 	let reverse = code.chars().rev().collect::<String>();
-	print!("{}", &reverse);
-	println!("{}", &code == &reverse);
-	true
+	//print!("{}", &reverse);
+	//println!("{}", &code == &reverse);
+	&code == &reverse
 
 }
 
